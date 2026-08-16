@@ -1,0 +1,22 @@
+name: ci
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - name: ruff
+        run: uvx ruff check vinylvision/
+      - name: compile check
+        run: |
+          uv python install 3.12
+          uv run --python 3.12 --no-project python -m compileall -q vinylvision

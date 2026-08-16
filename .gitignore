@@ -1,0 +1,16 @@
+# python
+.venv/
+__pycache__/
+*.pyc
+
+# runtime output (contains listening history)
+vv.log
+
+# OS / editor junk
+.DS_Store
+.idea/
+.vscode/
+
+# media cache lives outside the repo (~/Music/VinylVision), but just in case
+*.mp4
+*.feat.npy

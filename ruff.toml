@@ -1,0 +1,6 @@
+# Correctness + imports only. This app deliberately uses broad exception
+# handling to stay alive through flaky network/audio — don't lint that away.
+target-version = "py312"
+
+[lint]
+select = ["E4", "E7", "E9", "F", "I"]
