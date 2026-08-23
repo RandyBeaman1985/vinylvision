@@ -5,7 +5,7 @@ numpy==2.5.2
 pywebview==6.2.1          # native macOS window (pulls PyObjC)
 scipy==1.18.0
 shazamio==0.8.1
-sounddevice==0.5.5
+sounddevice==0.5.6
 # yt-dlp moves fast and YouTube breaks old versions (403s) — track prereleases
 --pre
-yt-dlp>=2026.8.4.234419.dev0
+yt-dlp>=2026.8.19.233000.dev0
