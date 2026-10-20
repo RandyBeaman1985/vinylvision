@@ -1,6 +1,6 @@
 # VinylVision — install into a Python 3.12 venv:
 #   uv venv --python 3.12 && uv pip install -r requirements.txt
-aiohttp==3.14.3
+aiohttp==3.14.4
 numpy==2.5.2
 pywebview==6.2.1          # native macOS window (pulls PyObjC)
 scipy==1.18.0
